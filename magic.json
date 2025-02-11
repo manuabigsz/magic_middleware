@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "magiclearn-app",
+  "private_key_id": "9b431531d64fb17e96a29a4c2b773ad7cd5d3966",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDUMqv5r4HzvgvL\nGdE9bellnYatK+XhkcHK/4fz+PGDnDiLf6G55RSBvKbGH/YzmzKYJBW+gjOBMn20\nAML7iux3HrXLmq+PyUbQH3R/43CGAiugSukMZwTZ6w0MAy3XSVKDnfrZJrO5OdUx\ntCRod0cWK/DKoLShlGeiWAekTLgB+MQiFJmHNiPY1oE/7bElINYfYlknThR8l4oP\nWGQoY06EuQP+O8MO5Qxzt93gfFlityt59DdTSjAWRt5ge4MU/gUEoC5nlbYACk6K\n3TXaXRDgRSYYNyPfygR+7Kbm8DfjMNcsF/XzMXW0JKSMAOBKTzAy8jmxOZl//F6Q\nHJyioLABAgMBAAECggEAEoP7YpWQYsrN76JokhIhn/a/ViPy8pxLyyFB5SVvOXsr\nqexwma5l/C4QZVBLpNQhdYoMhauJv/e+ZTL90IIeQQSie0obkJHRBn8AJNqdKmxN\nDzcKH8VrdHJgmJA8c0EYHJjv1vvcCckEk8oytRTXVJVv9NZR/Jlc85r3y7vQAIfi\nIwV6NbciMXGB+hYAQeLz7MI/IpJwHwY1dRq4dEqDJAQc2C+Maf6U2TtPG9oOX+6u\nrL7ANkPQFl/EPTWHqfB6i9/yrt5lquHhIiy53uzx8bw/9tvMaBMlVASv5Poxi5LJ\nS31Pdm9DKZfLM5XL/9J7dkU/WIZw3UsQeHyWW0A6eQKBgQD3BxTH75DMjAb6IfUE\nYEGbonxfdCaBUbPYYCdw37tEY1wVcVXfDKy4Lqy/NrEiLzDq26DBvn0FoCgwl/bG\nkfE7M5nHPO73ewDyK4kVsyfoofLPqNti8MHzC0XAsLiQRUaiEithpsPQ11r19dWY\n03iSSEXF1kI4k9ds2kygVJee1QKBgQDb57xpY3oZpweOp/dzZ7mQxEtD9DhalXFF\nPqOYkCDeZEc/nCsYkC0k+1PZ06p7F0YecS6NBB0Jaj2hURcsxDlr8lqyVq0TvlYR\nf0axhvM4pHigeYf4uBPkGHBD22GZtGr2kmMrTxqvuZSesyIkldzZYNle+1HsvdvC\nv1KlINyafQKBgGql7fzbmsIUejanTmbTP7/3iIaVWMJgCasS6DQ9A1ZlJy5CvfYM\nPM1PqVjsPdEqWo4qv96lZMh2+qLwGKRmAaWzg2KXFfxWaHQlA4wQytwOfwvUNNMk\najeJ2FV2dlgi8HmsKnqASu3w695gghT2x4kwFp9w/yn5+fmOzaIyozr5AoGAfQ6e\ncXim+WupupD/AlxchV18SBrc6XbPQcfLlXlxl8eDVUNkpsVnRv6+wsPC0dl8gNdw\n17UdJjuK7PCGs2isFx1uQrlUGERIAg9VjqPmMbIm/2vdza4xcagMQCrEqHqX0b2S\nNBD6ZjCtukq5AgFP5TdUptVZ075s+aWARHQZwKkCgYAaRaNx2y4/dlQRTbcGz9X5\nDvrTYnBfqV1tgjCBZLETjcfyAWgtznKDtsTRx5P8mt7vgpeyz7Mkj/lrBFYJYtXl\nDFlufkjHd+dHQk/CkNkRXRUHsUZXNwt4cGS5N+NmeBA8/qMTT53gO7bteYQYsbNk\n7pEbyiZ/Jnpk9kMpmWWYmg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@magiclearn-app.iam.gserviceaccount.com",
+  "client_id": "108428881147210460075",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40magiclearn-app.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
