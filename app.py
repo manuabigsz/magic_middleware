@@ -1,46 +1,33 @@
+import json
 from flask import Flask, jsonify
-import random
-import firebase_admin
-from firebase_admin import credentials, firestore
-from flask_cors import CORS
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
 
-firebase_cred = {
-    "type": "service_account",
-    "project_id": os.getenv("FIREBASE_PROJECT_ID"),
-    "private_key_id": os.getenv("FIREBASE_PRIVATE_KEY_ID"),
-    "private_key": os.getenv("FIREBASE_PRIVATE_KEY").replace('\\n', '\n'),
-    "client_email": os.getenv("FIREBASE_CLIENT_EMAIL"),
-    "client_id": os.getenv("FIREBASE_CLIENT_ID"),
-    "auth_uri": os.getenv("FIREBASE_AUTH_URI"),
-    "token_uri": os.getenv("FIREBASE_TOKEN_URI"),
-    "auth_provider_x509_cert_url": os.getenv("FIREBASE_AUTH_PROVIDER_X509_CERT_URL"),
-    "client_x509_cert_url": os.getenv("FIREBASE_CLIENT_X509_CERT_URL")
-}
+# Carregar o JSON com os dados
+with open('magic/magic.json', 'r') as f:
+    items = json.load(f)
 
-cred = credentials.Certificate(firebase_cred)
-firebase_admin.initialize_app(cred)
+@app.route("/getMagic/<int:tag_id>/<string:activity_id>", methods=["GET"])
+def getMagic(tag_id, activity_id):
+    # Procurar o item correspondente ao tag_id e activity_id fornecidos
+    item = next((item for item in items if item["tag_id"] == tag_id and item["activity_id"] == activity_id), None)
 
-db = firestore.client()
+    if item is None:
+        return jsonify({"error": "Item not found"}), 404
 
-items = ["cat", "dog", "alligator", "elephant", "tiger", "lion"]
+    return jsonify({"tag_id": tag_id, "activity_id": activity_id, "label": item["label"]}), 200
 
-@app.route("/getMagic/<int:id>", methods=["GET"])
-def getMagic(id):
-    random_item = random.choice(items)
+@app.route("/getQuizzes/", methods=["GET"])
+def getQuizzes():
+    # Retorna a lista de quizzes disponíveis (nome a ser exibido no carrossel)
 
-    magic_request_ref = db.collection('magic_requests').add({
-        'id': id,
-        'item': random_item
-    })
+    return 0
 
-    return jsonify({"id": id, "item": random_item}), 200
+@app.route("/getQuiz/<string:quizName>", methods=["GET"])
+def getMagic(quizName):
+    # Retorna a lista de quizzes disponíveis (nome a ser exibido no carrossel)
+
+    return 0
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

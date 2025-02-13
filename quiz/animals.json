@@ -1,0 +1,20 @@
+[
+    {
+        "question_id": 1,
+        "question_description": "What animal says au au?",
+        "correct_answer": "dog",
+        "image_url": "http://example.com/images/dog.jpg"
+    },
+    {
+        "question_id": 2,
+        "question_description": "What animal says meow meow?",
+        "correct_answer": "cat",
+        "image_url": "http://example.com/images/cat.jpg"
+    },
+    {
+        "question_id": 3,
+        "question_description": "What animal says oink oink?",
+        "correct_answer": "pig",
+        "image_url": "http://example.com/images/pig.jpg"
+    }
+]
