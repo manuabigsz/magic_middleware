@@ -1,9 +1,32 @@
 [
-    {"tag_id": 1, "activity_id": "magic", "label": "cat"},
-    {"tag_id": 2, "activity_id": "magic", "label": "dog"},
-    {"tag_id": 3, "activity_id": "magic", "label": "alligator"},
-    {"tag_id": 4, "activity_id": "magic", "label": "elephant"},
-    {"tag_id": 5, "activity_id": "magic", "label": "tiger"},
-    {"tag_id": 6, "activity_id": "magic", "label": "lion"},
-    {"tag_id": 6, "activity_id": "quiz", "label": "leone"}
+    {
+        "tag_id": 1,
+        "activity_id": "magic",
+        "label": "cat"
+    },
+    {
+        "tag_id": 2,
+        "activity_id": "magic",
+        "label": "dog"
+    },
+    {
+        "tag_id": 3,
+        "activity_id": "magic",
+        "label": "alligator"
+    },
+    {
+        "tag_id": 4,
+        "activity_id": "magic",
+        "label": "elephant"
+    },
+    {
+        "tag_id": 5,
+        "activity_id": "magic",
+        "label": "tiger"
+    },
+    {
+        "tag_id": 6,
+        "activity_id": "magic",
+        "label": "lion"
+    }
 ]

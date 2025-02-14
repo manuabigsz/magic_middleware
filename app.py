@@ -18,22 +18,19 @@ def getMagic(tag_id, activity_id):
 @app.route("/getQuizzes/", methods=["GET"])
 def getQuizzes():
     try:
-        with open("magic/magic.json", "r", encoding="utf-8") as file:
-            data = json.load(file)
+        quiz_folder = "quiz"
+        if not os.path.exists(quiz_folder):
+            return jsonify({"error": "Not Found"}), 404
         
-        quizzes = [
-            {"label": item["label"], "tag_id": item["tag_id"]}
-            for item in data if item.get("activity_id") == "quiz"
-        ]
-        
-        return jsonify(quizzes)
+        quizzes = [f for f in os.listdir(quiz_folder) if f.endswith(".json")]
+        return jsonify({"quizzes": quizzes})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 @app.route("/getQuiz/<string:quizName>", methods=["GET"])
 def getQuiz(quizName):
     try:
-        with open("quiz/animals.json", "r", encoding="utf-8") as file:
+        with open(f"quiz/{quizName}.json", "r", encoding="utf-8") as file:
             data = json.load(file)
         
         quiz_data = {
